@@ -12,7 +12,6 @@ app.listen(port, (err) => {
 app.get('/', (req, res) => {
     axios.get('http://localhost:3000/api')
         .then((response) => {
-            console.log(response)
             res.send({
                 servidor: 'front',
                 ...response.data
