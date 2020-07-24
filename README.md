@@ -1,10 +1,8 @@
 #### Como rodar?
 `docker build .`
 
-`docker run -it -p 8888:80 -d 096fbf39efda sh`
+`docker run -it -p 8888:80 -d @build_id sh`
 
-`docker run -it -p 8883:80 --name teste5 -d 096fbf39efda sh`
+ou
 
-
-**PROBLEMAS**
-- [ ] melhorar o docker file com pm2
+`docker run -it -p 8883:80 --name @nome_container -d @build_id sh`
